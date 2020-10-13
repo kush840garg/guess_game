@@ -6,7 +6,7 @@ function input {
   if[[ ! $guess =~ ^[0-9]+$ ]]
   then 
   echo "Invalid input enter a number"
-  exit
+  input
   fi
 }
 input
