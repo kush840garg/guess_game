@@ -3,7 +3,7 @@ function input {
 	echo "Enter the number of files in the current directory:"
   read guess  
   f=$(ls -1 | wc -l)
-  if[[ ! $guess =~ ^[0-9]+$ ]]
+  if [[ ! $guess =~ ^[0-9]+$ ]]
   then 
   echo "Invalid input enter a number"
   input
